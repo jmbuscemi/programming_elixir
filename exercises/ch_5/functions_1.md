@@ -2,7 +2,7 @@
 
 list_concat.([:a, :b], {:c, :d]) #=> [:a, :b, :c, :d]
   ```
-  list_concat = fn([a, b], [c, d]) -> [a, b, c, d] end
+  list_concat = fn(a, b) -> a ++ b  end
   ```
 sum.(1,2,3) #=> 6
   ```
