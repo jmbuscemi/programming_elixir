@@ -7,4 +7,7 @@ defmodule MyList do
 
   def add_one([]), do: []
   def add_one([head | tail]), do: [head + 1 | add_one(tail)]
+
+  def map([], _func), do: []
+  def map([head | tail], func), do: [func.(head) | map(tail, func)]
 end
